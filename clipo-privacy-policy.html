@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Clipo</title>
+  <style>
+    :root {
+      --text: #1a1a1a;
+      --muted: #5c5c5c;
+      --border: #e8e8e8;
+      --accent: #2563eb;
+      --bg: #fafafa;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.65;
+      color: var(--text);
+      background: var(--bg);
+      margin: 0;
+      padding: 0;
+    }
+    .wrap {
+      max-width: 42rem;
+      margin: 0 auto;
+      padding: 2.5rem 1.25rem 4rem;
+    }
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin: 0 0 0.5rem;
+      letter-spacing: -0.02em;
+    }
+    .meta {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+    h2 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin: 2.25rem 0 0.75rem;
+      letter-spacing: -0.01em;
+    }
+    p, ul {
+      margin: 0 0 1rem;
+    }
+    ul {
+      padding-left: 1.25rem;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+    .highlight {
+      background: #eff6ff;
+      border-left: 3px solid var(--accent);
+      padding: 1rem 1.25rem;
+      margin: 1.5rem 0;
+      border-radius: 0 6px 6px 0;
+    }
+    .placeholder {
+      background: #fff8e6;
+      border: 1px dashed #d4a574;
+      padding: 0.75rem 1rem;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+    }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.875rem;
+      color: var(--muted);
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Privacy Policy</h1>
+      <p class="meta"><strong>Clipo</strong> — a privacy-first clipboard manager for Android, iOS, macOS, and web.</p>
+      <p class="meta"><strong>Effective date:</strong> <span class="placeholder" style="display:inline-block;margin:0;">[EFFECTIVE_DATE — e.g. March 24, 2026]</span></p>
+    </header>
+
+    <section id="introduction">
+      <h2>Introduction</h2>
+      <p>
+        This policy explains how Clipo handles information when you use our app. We built Clipo with privacy as a priority: your clipboard belongs to you, and we do not collect it, send it over the internet, or share it with anyone.
+      </p>
+      <div class="highlight">
+        <strong>In short:</strong> Clipboard data and related app data stay on your device. We do not transmit your personal data to our servers or to third parties because we do not collect it in the first place.
+      </div>
+    </section>
+
+    <section id="data-we-collect">
+      <h2>Data We Collect</h2>
+      <p>
+        <strong>We do not collect personal data.</strong> Clipo does not gather, store on our systems, or process your information on any server we operate. There is no account to create, no user profile we build, and no database of your activity on our side.
+      </p>
+      <p>Specifically, Clipo does <strong>not</strong>:</p>
+      <ul>
+        <li>Upload or sync your clipboard contents to the cloud (unless you choose to use separate device features outside our control, such as your own backup tools)</li>
+        <li>Use analytics, crash reporting that identifies you, advertising, or marketing trackers</li>
+        <li>Require an account</li>
+        <li>Embed third-party SDKs that collect or transmit your data</li>
+      </ul>
+      <p>
+        Anything you copy and manage with Clipo is handled entirely on your device, as described in the Local Storage section below.
+      </p>
+    </section>
+
+    <section id="permissions">
+      <h2>Permissions Used</h2>
+      <p>
+        Depending on your platform, the operating system may ask you to allow certain permissions. Here is what we use them for:
+      </p>
+      <ul>
+        <li><strong>Clipboard access</strong> — Required for the core purpose of the app: reading and organizing clipboard content you choose to save.</li>
+        <li><strong>Biometrics / Face ID / Touch ID</strong> — Optional. Used only if you turn on app lock, so only you can open Clipo.</li>
+        <li><strong>Local notifications</strong> — Used for alerts related to clipboard monitoring, if you enable features that notify you. These are delivered on your device only.</li>
+        <li><strong>Background activity / background service</strong> — Allows the app to monitor the clipboard in the background when you have enabled that behavior, so Clipo can work as a clipboard manager without staying on screen.</li>
+        <li><strong>File access (files and documents)</strong> — Used when you import or export backup files (for example <code>.json</code> or <code>.txt</code>) that you explicitly choose. We only access files you select for those actions.</li>
+      </ul>
+      <p>
+        Granting permissions is your choice where the system allows it; without clipboard access, the app cannot perform its main function.
+      </p>
+    </section>
+
+    <section id="local-storage">
+      <h2>Local Storage</h2>
+      <p>
+        Clipo stores your saved clipboard history and related app data <strong>locally on your device</strong> using <strong>Hive</strong>, a local database. That data remains in your app’s private storage area (or equivalent on each platform) and is not sent to us or to advertisers.
+      </p>
+      <p>
+        <strong>No data ever leaves your device through Clipo for our purposes.</strong> We do not operate a backend that receives your clipboard. If you use export, share, or backup features, any transfer happens only because you initiated it (for example, saving a file or using another app), not because Clipo silently uploads your content.
+      </p>
+      <p>
+        Uninstalling the app or clearing app data may erase local storage, depending on your device. Keep your own backups if you need to preserve exports.
+      </p>
+    </section>
+
+    <section id="third-parties">
+      <h2>Third Parties</h2>
+      <p>
+        Clipo is built with <strong>Flutter</strong> and uses <strong>no third-party services that collect or share your personal data</strong> for analytics, ads, or tracking. We do not sell data—we have none to sell.
+      </p>
+      <p>
+        Your device manufacturer and operating system (Google, Apple, etc.) may have their own privacy practices for how the OS handles the clipboard, notifications, and storage. Those are governed by their policies, not by this document.
+      </p>
+    </section>
+
+    <section id="children">
+      <h2>Children’s Privacy</h2>
+      <p>
+        Clipo is not directed at children, and we do not knowingly collect any personal information from anyone. The app does not include social features or accounts that would identify a child. If you are a parent or guardian and have concerns, you can remove the app from a device at any time; no data is held on our servers.
+      </p>
+    </section>
+
+    <section id="changes">
+      <h2>Changes to This Policy</h2>
+      <p>
+        We may update this privacy policy from time to time—for example, if we add a feature that changes how data is handled. When we do, we will update the effective date at the top of this page. If the changes are important, we may also notify you in the app or in the store listing. Continued use of Clipo after an update means you accept the revised policy.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>
+        If you have questions about this privacy policy or how Clipo treats your data, you can reach us at:
+      </p>
+      <p class="placeholder">
+        <strong>Email:</strong> [YOUR_CONTACT_EMAIL@EXAMPLE.COM]
+      </p>
+      <p>
+        Replace the placeholder above with your real support or privacy contact before publishing. For Google Play and Apple App Store listings, use the same URL where this policy is hosted (or paste the policy text into the store console if required).
+      </p>
+    </section>
+
+    <footer>
+      <p>© Clipo. This policy describes the Clipo app’s approach to privacy. It is provided for transparency and store compliance; it is not personalized legal advice.</p>
+    </footer>
+  </div>
+</body>
+</html>
