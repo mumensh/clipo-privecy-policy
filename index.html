@@ -85,17 +85,17 @@
   <div class="wrap">
     <header>
       <h1>Privacy Policy</h1>
-      <p class="meta"><strong>Clipo</strong> — a privacy-first clipboard manager for Android, iOS, macOS, and web.</p>
-      <p class="meta"><strong>Effective date:</strong> March 24, 2026</p>
+      <p class="meta"><strong>Clipo</strong> — a privacy-first clipboard manager and keyboard for Android.</p>
+      <p class="meta"><strong>Effective date:</strong> March 28, 2026</p>
     </header>
 
     <section id="introduction">
       <h2>Introduction</h2>
       <p>
-        This policy explains how Clipo handles information when you use our app. We built Clipo with privacy as a priority: your clipboard belongs to you, and we do not collect it, send it over the internet, or share it with anyone.
+        This policy explains how Clipo handles information when you use our app and keyboard. We built Clipo with privacy as a priority: your clipboard and your keystrokes belong to you, and we do not collect them, send them over the internet, or share them with anyone.
       </p>
       <div class="highlight">
-        <strong>In short:</strong> Clipboard data and related app data stay on your device. We do not transmit your personal data to our servers or to third parties because we do not collect it in the first place.
+        <strong>In short:</strong> Clipboard data, keystroke input, word suggestions, and all related app data stay on your device. We do not transmit your personal data to our servers or to third parties because we do not collect it in the first place.
       </div>
     </section>
 
@@ -106,53 +106,75 @@
       </p>
       <p>Specifically, Clipo does <strong>not</strong>:</p>
       <ul>
-        <li>Upload or sync your clipboard contents to the cloud (unless you choose to use separate device features outside our control, such as your own backup tools)</li>
+        <li>Upload or sync your clipboard contents or keyboard input to the cloud</li>
+        <li>Transmit, log, or record your keystrokes to any external server</li>
         <li>Use analytics, crash reporting that identifies you, advertising, or marketing trackers</li>
         <li>Require an account</li>
         <li>Embed third-party SDKs that collect or transmit your data</li>
       </ul>
       <p>
-        Anything you copy and manage with Clipo is handled entirely on your device, as described in the Local Storage section below.
+        Anything you copy, type, or manage with Clipo is handled entirely on your device, as described in the sections below.
+      </p>
+    </section>
+
+    <section id="keyboard">
+      <h2>Clipo Keyboard (Input Method)</h2>
+      <p>
+        Clipo includes a custom keyboard (Input Method Editor) that you can enable as your device keyboard. We understand that a keyboard has access to everything you type, which is why we want to be explicit about what Clipo Keyboard does and does not do:
+      </p>
+      <ul>
+        <li><strong>Keystroke processing is entirely local.</strong> Every character you type is processed on your device to deliver it to the app you are typing in. No keystroke data is sent to us or to any third party.</li>
+        <li><strong>Clipboard capture is local.</strong> When the Clipo Keyboard is active, it captures copied text and stores it in a local queue on your device. This is how Clipo reliably saves your clipboard history on Android 10 and above.</li>
+        <li><strong>Word suggestions and autocorrect are local.</strong> The keyboard learns your vocabulary over time to improve suggestions. This learned data is stored in your device's local storage and is never transmitted.</li>
+        <li><strong>Emoji input is local.</strong> The emoji picker is powered by Google's open-source Emoji2 library, which runs entirely on your device. No emoji usage data is sent anywhere.</li>
+        <li><strong>Theme preferences are local.</strong> Your chosen keyboard theme (light, dark, or system) is stored on your device only.</li>
+      </ul>
+      <p>
+        You can disable or remove the Clipo Keyboard at any time in your device's keyboard settings. Disabling it does not delete your clipboard history in the Clipo app.
       </p>
     </section>
 
     <section id="permissions">
       <h2>Permissions Used</h2>
       <p>
-        Depending on your platform, the operating system may ask you to allow certain permissions. Here is what we use them for:
+        The operating system may ask you to allow certain permissions. Here is what we use them for:
       </p>
       <ul>
+        <li><strong>Input Method (keyboard) access</strong> — Required to enable the Clipo Keyboard. This permission allows Clipo to function as your device keyboard and to capture clipboard content reliably. All input is processed locally.</li>
         <li><strong>Clipboard access</strong> — Required for the core purpose of the app: reading and organizing clipboard content you choose to save.</li>
-        <li><strong>Biometrics / Face ID / Touch ID</strong> — Optional. Used only if you turn on app lock, so only you can open Clipo.</li>
+        <li><strong>Biometrics / fingerprint / face unlock</strong> — Optional. Used only if you turn on app lock, so only you can open Clipo.</li>
         <li><strong>Local notifications</strong> — Used for alerts related to clipboard monitoring, if you enable features that notify you. These are delivered on your device only.</li>
         <li><strong>Background activity / background service</strong> — Allows the app to monitor the clipboard in the background when you have enabled that behavior, so Clipo can work as a clipboard manager without staying on screen.</li>
         <li><strong>File access (files and documents)</strong> — Used when you import or export backup files (for example <code>.json</code> or <code>.txt</code>) that you explicitly choose. We only access files you select for those actions.</li>
       </ul>
       <p>
-        Granting permissions is your choice where the system allows it; without clipboard access, the app cannot perform its main function.
+        Granting permissions is your choice where the system allows it; without keyboard or clipboard access, the app cannot perform its main function.
       </p>
     </section>
 
     <section id="local-storage">
       <h2>Local Storage</h2>
       <p>
-        Clipo stores your saved clipboard history and related app data <strong>locally on your device</strong> using <strong>Hive</strong>, a local database. That data remains in your app's private storage area (or equivalent on each platform) and is not sent to us or to advertisers.
+        Clipo stores your saved clipboard history, keyboard learned words, theme preferences, and related app data <strong>locally on your device</strong> using local databases and shared preferences. That data remains in your app's private storage area and is not sent to us or to advertisers.
       </p>
       <p>
-        <strong>No data ever leaves your device through Clipo for our purposes.</strong> We do not operate a backend that receives your clipboard. If you use export, share, or backup features, any transfer happens only because you initiated it (for example, saving a file or using another app), not because Clipo silently uploads your content.
+        <strong>No data ever leaves your device through Clipo for our purposes.</strong> We do not operate a backend that receives your clipboard or keyboard input. If you use export, share, or backup features, any transfer happens only because you initiated it (for example, saving a file or using another app), not because Clipo silently uploads your content.
       </p>
       <p>
-        Uninstalling the app or clearing app data may erase local storage, depending on your device. Keep your own backups if you need to preserve exports.
+        Uninstalling the app or clearing app data may erase local storage, including your clipboard history and learned words. Keep your own backups if you need to preserve exports.
       </p>
     </section>
 
     <section id="third-parties">
       <h2>Third Parties</h2>
       <p>
-        Clipo is built with <strong>Flutter</strong> and uses <strong>no third-party services that collect or share your personal data</strong> for analytics, ads, or tracking. We do not sell data—we have none to sell.
+        Clipo is built with <strong>Flutter</strong> and uses <strong>no third-party services that collect or share your personal data</strong> for analytics, ads, or tracking. We do not sell data — we have none to sell.
       </p>
       <p>
-        Your device manufacturer and operating system (Google, Apple, etc.) may have their own privacy practices for how the OS handles the clipboard, notifications, and storage. Those are governed by their policies, not by this document.
+        The emoji picker is provided by Google's open-source <strong>Emoji2</strong> library, which is bundled within the app and runs entirely on your device. It does not communicate with any server.
+      </p>
+      <p>
+        Your device manufacturer and operating system (Google, etc.) may have their own privacy practices for how the OS handles the keyboard, clipboard, notifications, and storage. Those are governed by their policies, not by this document.
       </p>
     </section>
 
@@ -166,7 +188,7 @@
     <section id="changes">
       <h2>Changes to This Policy</h2>
       <p>
-        We may update this privacy policy from time to time—for example, if we add a feature that changes how data is handled. When we do, we will update the effective date at the top of this page. If the changes are important, we may also notify you in the app or in the store listing. Continued use of Clipo after an update means you accept the revised policy.
+        We may update this privacy policy from time to time — for example, if we add a feature that changes how data is handled. When we do, we will update the effective date at the top of this page. If the changes are important, we may also notify you in the app or in the store listing. Continued use of Clipo after an update means you accept the revised policy.
       </p>
     </section>
 
@@ -181,7 +203,7 @@
     </section>
 
     <footer>
-      <p>© Clipo. This policy describes the Clipo app's approach to privacy. It is provided for transparency and store compliance; it is not personalized legal advice.</p>
+      <p>&copy; Clipo. This policy describes the Clipo app's approach to privacy. It is provided for transparency and store compliance; it is not personalized legal advice.</p>
     </footer>
   </div>
 </body>
