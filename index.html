@@ -49,6 +49,11 @@
       margin: 2.25rem 0 0.75rem;
       letter-spacing: -0.01em;
     }
+    h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin: 1.5rem 0 0.5rem;
+    }
     p, ul {
       margin: 0 0 1rem;
     }
@@ -85,8 +90,8 @@
   <div class="wrap">
     <header>
       <h1>Privacy Policy</h1>
-      <p class="meta"><strong>Clipo</strong> — a privacy-first clipboard manager and keyboard for Android.</p>
-      <p class="meta"><strong>Effective date:</strong> March 28, 2026</p>
+      <p class="meta"><strong>Clipo</strong> — a privacy-first clipboard manager and keyboard for Android and iOS.</p>
+      <p class="meta"><strong>Effective date:</strong> June 30, 2026</p>
     </header>
 
     <section id="introduction">
@@ -95,26 +100,55 @@
         This policy explains how Clipo handles information when you use our app and keyboard. We built Clipo with privacy as a priority: your clipboard and your keystrokes belong to you, and we do not collect them, send them over the internet, or share them with anyone.
       </p>
       <div class="highlight">
-        <strong>In short:</strong> Clipboard data, keystroke input, word suggestions, and all related app data stay on your device. We do not transmit your personal data to our servers or to third parties because we do not collect it in the first place.
+        <strong>In short:</strong> Your clipboard, keystrokes, word suggestions, and related app content stay on your device. We do not upload that content to our servers. If you subscribe to <strong>Clipo Pro</strong>, limited purchase and subscription information is processed by Apple or Google and by our subscription provider, RevenueCat, solely to manage your subscription — not to access your clipboard or keyboard input.
       </div>
     </section>
 
     <section id="data-we-collect">
       <h2>Data We Collect</h2>
+
+      <h3>Clipboard and app content</h3>
       <p>
-        <strong>We do not collect personal data.</strong> Clipo does not gather, store on our systems, or process your information on any server we operate. There is no account to create, no user profile we build, and no database of your activity on our side.
+        <strong>We do not collect your clipboard or keyboard content.</strong> Clipo does not gather, store on our systems, or process your clipboard history, keystrokes, templates, or other app content on any server we operate. There is no account required to use Clipo, and we do not build a profile of what you copy or type.
       </p>
       <p>Specifically, Clipo does <strong>not</strong>:</p>
       <ul>
         <li>Upload or sync your clipboard contents or keyboard input to the cloud</li>
         <li>Transmit, log, or record your keystrokes to any external server</li>
         <li>Use analytics, crash reporting that identifies you, advertising, or marketing trackers</li>
-        <li>Require an account</li>
-        <li>Embed third-party SDKs that collect or transmit your data</li>
+        <li>Access your clipboard or typing data for subscription or billing purposes</li>
+      </ul>
+
+      <h3>Subscriptions (Clipo Pro)</h3>
+      <p>
+        If you choose to purchase or restore a <strong>Clipo Pro</strong> subscription, limited information is processed so we can verify your entitlement and unlock Pro features (such as higher clip and template limits). This is separate from your clipboard data.
+      </p>
+      <p>When you subscribe or restore purchases, the following may be processed:</p>
+      <ul>
+        <li><strong>Purchase and subscription status</strong> — whether you have an active subscription, the product purchased, renewal status, and related transaction identifiers</li>
+        <li><strong>Anonymous app user identifier</strong> — RevenueCat assigns a random identifier on your device to link purchases to your install. We do not ask for your name, email, or phone number to subscribe</li>
+        <li><strong>Store account data</strong> — Apple App Store or Google Play processes payment and may associate the purchase with your store account under their own policies</li>
+        <li><strong>Locale and currency</strong> — used to show correct pricing (not precise location)</li>
       </ul>
       <p>
-        Anything you copy, type, or manage with Clipo is handled entirely on your device, as described in the sections below.
+        We do <strong>not</strong> receive your payment card number or full billing details. Payments are handled entirely by Apple or Google.
       </p>
+      <p>
+        Anything you copy, type, or manage with Clipo outside of billing remains on your device, as described in the sections below.
+      </p>
+    </section>
+
+    <section id="subscriptions">
+      <h2>Subscriptions (Clipo Pro)</h2>
+      <p>
+        Clipo offers an optional paid subscription, <strong>Clipo Pro</strong>, that unlocks additional features such as higher clip and template limits. A free tier remains available without a subscription.
+      </p>
+      <ul>
+        <li><strong>Billing.</strong> Subscriptions are billed through the Apple App Store or Google Play. We do not process payments directly.</li>
+        <li><strong>Verification.</strong> The app checks your subscription status through RevenueCat to determine whether Pro features are enabled. This check does not include your clipboard or keyboard data.</li>
+        <li><strong>Restore purchases.</strong> If you reinstall the app or switch devices, you can restore prior purchases using the same store account. RevenueCat and the store use purchase records to restore your entitlement.</li>
+        <li><strong>Cancellation.</strong> You can cancel anytime in your store account settings, or through the in-app subscription management screen where available. Cancellation stops future charges; access continues until the end of the current billing period unless otherwise stated in the store.</li>
+      </ul>
     </section>
 
     <section id="keyboard">
@@ -125,12 +159,13 @@
       <ul>
         <li><strong>Keystroke processing is entirely local.</strong> Every character you type is processed on your device to deliver it to the app you are typing in. No keystroke data is sent to us or to any third party.</li>
         <li><strong>Clipboard capture is local.</strong> When the Clipo Keyboard is active, it captures copied text and stores it in a local queue on your device. This is how Clipo reliably saves your clipboard history on Android 10 and above.</li>
-        <li><strong>Word suggestions and autocorrect are local.</strong> The keyboard learns your vocabulary over time to improve suggestions. This learned data is stored in your device's local storage and is never transmitted.</li>
-        <li><strong>Emoji input is local.</strong> The emoji picker is powered by Google's open-source Emoji2 library, which runs entirely on your device. No emoji usage data is sent anywhere.</li>
+        <li><strong>iOS Full Access.</strong> On iPhone and iPad, if you enable &ldquo;Allow Full Access&rdquo; for the Clipo keyboard, you can read the system pasteboard when you explicitly tap <strong>Paste</strong> on the keyboard to save the current clipboard into local storage shared with the main app via your device&rsquo;s app group. Clipo does not automatically read the pasteboard in the background while you type. Nothing is transmitted off-device.</li>
+        <li><strong>Word suggestions and autocorrect are local.</strong> The keyboard learns your vocabulary over time to improve suggestions. This learned data is stored in your device&rsquo;s local storage and is never transmitted.</li>
+        <li><strong>Emoji input is local.</strong> The emoji picker is powered by Google&rsquo;s open-source Emoji2 library, which runs entirely on your device. No emoji usage data is sent anywhere.</li>
         <li><strong>Theme preferences are local.</strong> Your chosen keyboard theme (light, dark, or system) is stored on your device only.</li>
       </ul>
       <p>
-        You can disable or remove the Clipo Keyboard at any time in your device's keyboard settings. Disabling it does not delete your clipboard history in the Clipo app.
+        You can disable or remove the Clipo Keyboard at any time in your device&rsquo;s keyboard settings. Disabling it does not delete your clipboard history in the Clipo app.
       </p>
     </section>
 
@@ -145,7 +180,7 @@
         <li><strong>Biometrics / fingerprint / face unlock</strong> — Optional. Used only if you turn on app lock, so only you can open Clipo.</li>
         <li><strong>Local notifications</strong> — Used for alerts related to clipboard monitoring, if you enable features that notify you. These are delivered on your device only.</li>
         <li><strong>Background activity / background service</strong> — Allows the app to monitor the clipboard in the background when you have enabled that behavior, so Clipo can work as a clipboard manager without staying on screen.</li>
-        <li><strong>File access (files and documents)</strong> — Used when you import or export backup files (for example <code>.json</code> or <code>.txt</code>) that you explicitly choose. We only access files you select for those actions.</li>
+        <li><strong>File access (files and documents)</strong> — Used when you import or export backup files (for example <code>.json</code>, <code>.txt</code>, or <code>.csv</code>) that you explicitly choose. We only access files you select for those actions.</li>
       </ul>
       <p>
         Granting permissions is your choice where the system allows it; without keyboard or clipboard access, the app cannot perform its main function.
@@ -155,10 +190,10 @@
     <section id="local-storage">
       <h2>Local Storage</h2>
       <p>
-        Clipo stores your saved clipboard history, keyboard learned words, theme preferences, and related app data <strong>locally on your device</strong> using local databases and shared preferences. That data remains in your app's private storage area and is not sent to us or to advertisers.
+        Clipo stores your saved clipboard history, keyboard learned words, theme preferences, and related app data <strong>locally on your device</strong> using local databases and shared preferences. That data remains in your app&rsquo;s private storage area and is not sent to us or to advertisers.
       </p>
       <p>
-        <strong>No data ever leaves your device through Clipo for our purposes.</strong> We do not operate a backend that receives your clipboard or keyboard input. If you use export, share, or backup features, any transfer happens only because you initiated it (for example, saving a file or using another app), not because Clipo silently uploads your content.
+        <strong>Your clipboard and app content do not leave your device for our purposes.</strong> We do not operate a backend that receives your clipboard or keyboard input. Subscription status is checked through Apple, Google, and RevenueCat when needed to unlock Pro features; that flow does not include your clipboard data. If you use export, share, or backup features, any transfer happens only because you initiated it (for example, saving a file or using another app), not because Clipo silently uploads your content.
       </p>
       <p>
         Uninstalling the app or clearing app data may erase local storage, including your clipboard history and learned words. Keep your own backups if you need to preserve exports.
@@ -168,20 +203,35 @@
     <section id="third-parties">
       <h2>Third Parties</h2>
       <p>
-        Clipo is built with <strong>Flutter</strong> and uses <strong>no third-party services that collect or share your personal data</strong> for analytics, ads, or tracking. We do not sell data — we have none to sell.
+        Clipo is built with <strong>Flutter</strong>. Aside from subscription management, we use <strong>no third-party services that collect or share your clipboard, keyboard, or app content</strong> for analytics, ads, or tracking. We do not sell your clipboard data — we do not have it.
+      </p>
+
+      <h3>RevenueCat (subscriptions)</h3>
+      <p>
+        We use <strong><a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener noreferrer">RevenueCat</a></strong> to manage in-app subscriptions and verify <strong>Clipo Pro</strong> entitlements. RevenueCat receives purchase and subscription information from Apple or Google on our behalf. It does not receive your clipboard contents, keystrokes, or templates. RevenueCat acts as a service provider (data processor) for subscription data only.
       </p>
       <p>
-        The emoji picker is provided by Google's open-source <strong>Emoji2</strong> library, which is bundled within the app and runs entirely on your device. It does not communicate with any server.
+        You can manage or cancel your subscription through your device&rsquo;s App Store or Google Play account settings, or through the in-app subscription management screen where available.
+      </p>
+
+      <h3>Apple App Store and Google Play</h3>
+      <p>
+        If you purchase Clipo Pro, your payment and subscription are processed by <strong>Apple</strong> (iOS) or <strong>Google</strong> (Android) under their respective privacy policies. We do not control how those platforms handle your store account or payment information.
+      </p>
+
+      <h3>Other bundled libraries</h3>
+      <p>
+        The emoji picker is provided by Google&rsquo;s open-source <strong>Emoji2</strong> library, which is bundled within the app and runs entirely on your device. It does not communicate with any server.
       </p>
       <p>
-        Your device manufacturer and operating system (Google, etc.) may have their own privacy practices for how the OS handles the keyboard, clipboard, notifications, and storage. Those are governed by their policies, not by this document.
+        Your device manufacturer and operating system (Google, Apple, etc.) may have their own privacy practices for how the OS handles the keyboard, clipboard, notifications, storage, and in-app purchases. Those are governed by their policies, not by this document.
       </p>
     </section>
 
     <section id="children">
-      <h2>Children's Privacy</h2>
+      <h2>Children&rsquo;s Privacy</h2>
       <p>
-        Clipo is not directed at children, and we do not knowingly collect any personal information from anyone. The app does not include social features or accounts that would identify a child. If you are a parent or guardian and have concerns, you can remove the app from a device at any time; no data is held on our servers.
+        Clipo is not directed at children, and we do not knowingly collect personal information from children. The app does not include social features or accounts. Subscription purchases, if made, are handled by the app store under the account holder&rsquo;s control. If you are a parent or guardian and have concerns, you can remove the app from a device at any time.
       </p>
     </section>
 
@@ -203,7 +253,7 @@
     </section>
 
     <footer>
-      <p>&copy; Clipo. This policy describes the Clipo app's approach to privacy. It is provided for transparency and store compliance; it is not personalized legal advice.</p>
+      <p>&copy; Clipo. This policy describes the Clipo app&rsquo;s approach to privacy. It is provided for transparency and store compliance; it is not personalized legal advice.</p>
     </footer>
   </div>
 </body>
